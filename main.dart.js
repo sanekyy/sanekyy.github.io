@@ -41206,7 +41206,7 @@ F.nT.prototype={
 aD:function(){return new F.zR(C.l)}}
 F.zR.prototype={
 b4:function(){this.bp()
-self.JSON.stringify("VKWebAppInit")},
+self.vkBridge.send("VKWebAppInit")},
 J:function(a,b){return new S.nG(new F.nU("Flutter Demo Home Page",null),"Flutter Demo",X.X3(null,C.lC),null)}}
 F.nU.prototype={
 aD:function(){return new F.qa(C.l)}}
