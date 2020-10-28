@@ -20,17 +20,44 @@
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="example">
+  <meta name="apple-mobile-web-app-title" content="client">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>example</title>
+  <title>client</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-   <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAZqV4ktLzNIFA1ukmoCRDC59s3htRhZjA",
+    authDomain: "gohere-257919.firebaseapp.com",
+    databaseURL: "https://gohere-257919.firebaseio.com",
+    projectId: "gohere-257919",
+    storageBucket: "gohere-257919.appspot.com",
+    messagingSenderId: "598438071060",
+    appId: "1:598438071060:web:ed6f4c505b23d0e3e55001",
+    measurementId: "G-CSJMS8V1MK"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  // firebase.analytics();
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB884ri6wlGaVGz7ejUlU8DcgaHwSUiqIM"></script>
 
 <!-- This script installs service_worker.js to provide PWA functionality to
      application. For more information, see:
@@ -38,7 +65,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=51191849');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=1345756433');
       });
     }
   </script>
