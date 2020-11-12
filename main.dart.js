@@ -116814,14 +116814,14 @@ $S:11}
 T.a5c.prototype={
 aKs:function(a){var s,r,q,p,o
 P.eX("vk_bridge: ___EVENT+TRY")
-s=C.c.ac("vk_bridge: ___EVENT+TRY: ",J.bba(J.bpM(a)))
-P.eX(s)
+s=self.JSON.stringify(a)
 r=this.c
 r.q(0,s)
-q=self.JSON.stringify(a)
+q=C.c.ac("vk_bridge: ___EVENT+TRY: ",J.bba(J.bpM(a)))
+P.eX(q)
 r.q(0,q)
-P.eX(C.c.ac("vk_bridge: ___EVENT___",q))
-p=J.A(C.a9.l7(0,q,null),"detail")
+P.eX(C.c.ac("vk_bridge: ___EVENT___",s))
+p=J.A(C.a9.l7(0,s,null),"detail")
 r=J.a0(p)
 o=H.q(r.i(p,"type"))
 r.i(p,"data")
