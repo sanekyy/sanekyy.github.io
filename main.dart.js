@@ -21011,7 +21011,7 @@ apO:function(a,b){var s=0,r=P.k(t.z),q,p
 var $async$apO=P.f(function(c,d){if(c===1)return P.h(d,r)
 while(true)switch(s){case 0:p=t.z
 s=3
-return P.l(C.a6r.bH("saveImageToGallery",P.J(["imageBytes",a,"quality",b,"name",null,"isReturnImagePathOfIOS",!1],t.X,p),!1,p),$async$apO)
+return P.l(C.a6r.bH("saveImageToGallery",P.J(["imageBytes",a,"quality",b,"name",null],t.X,p),!1,p),$async$apO)
 case 3:q=d
 s=1
 break
