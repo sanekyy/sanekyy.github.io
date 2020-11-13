@@ -70,23 +70,19 @@
 <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=733288927');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=1484857367');
       });
     }
 </script>
 
 <script>
-console.log("Hello world!");
+<!--vkBridge.subscribe((event) => {-->
+<!--    console.log("___INDEX___" + event);-->
+<!--    console.log("___INDEX___TRY" + JSON.stringify(event));-->
+<!--    console.log("___INDEX___TRY_MORE" + event.detail);-->
 
-vkBridge.subscribe((event) => {
-    console.log("___INDEX___" + event);
-    console.log("___INDEX___TRY" + JSON.stringify(event));
-    console.log("___INDEX___TRY_MORE" + event.detail);
-
-    window.vkBridgeDartListener(event.detail);
-});
-
-console.log("Hello world END!");
+<!--    window.vkBridgeDartListener(event.detail);-->
+<!--});-->
 </script>
 
 <script src="main.dart.js" type="application/javascript"></script>
