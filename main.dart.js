@@ -30381,7 +30381,7 @@ case 5:s=d?3:4
 break
 case 3:O.n(C.d,"url_utils","Open url "+H.c(b))
 s=6
-return P.l(T.b17(b,"_self"),$async$nU)
+return P.l(T.b17(b,"_blank"),$async$nU)
 case 6:if(d){q=!0
 s=1
 break}case 4:O.n(C.F,"url_utils","Can't open url "+H.c(b))
