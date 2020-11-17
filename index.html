@@ -37,15 +37,13 @@
 <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
 
 <!-- Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
 
 <script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   var firebaseConfig = {
     apiKey: "AIzaSyAZqV4ktLzNIFA1ukmoCRDC59s3htRhZjA",
     authDomain: "gohere-257919.firebaseapp.com",
@@ -56,9 +54,7 @@
     appId: "1:598438071060:web:ed6f4c505b23d0e3e55001",
     measurementId: "G-CSJMS8V1MK"
   };
-  // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  // firebase.analytics();
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl03PDC9yLLbJ-3ROWMD4-jsMEeKskNpM"></script>
@@ -69,7 +65,7 @@
 <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=1575166700');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=2720857788');
       });
     }
 </script>
