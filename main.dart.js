@@ -115436,7 +115436,7 @@ try{b=K.b8A(c,t.Sm)}catch(a8){H.G(a2)
 m.a.pj(0,"send("+a3+") jsonError: "+H.c(d))
 m.a.pj(0,"can't deserialize error: "+H.c(c))
 throw a2}m.a.pj(0,"send("+a3+") error: "+H.c(b))
-throw a2
+throw H.b(b)
 s=6
 break
 case 3:s=2
