@@ -116847,14 +116847,18 @@ n.a=p
 return l}}
 G.pN.prototype={}
 G.a6i.prototype={
-N:function(a,b,c){var s=H.a(["key",a.F(b.a,C.f)],t.M),r=b.b
-if(r!=null){s.push("value")
-s.push(a.F(r,C.f))}return s},
+N:function(a,b,c){var s,r=H.a(["key",a.F(b.a,C.f)],t.M)
+r.push("value")
+s=b.b
+if(s==null)r.push(null)
+else r.push(a.F(s,C.f))
+return r},
 av:function(a,b){return this.N(a,b,C.i)},
 O:function(a,b,c){var s,r,q,p=new G.uj(),o=J.a8(b)
 for(;o.m();){s=H.q(o.gu(o))
 o.m()
 r=o.gu(o)
+if(r==null)continue
 switch(s){case"key":q=H.q(a.E(r,C.f))
 p.guO().b=q
 break
