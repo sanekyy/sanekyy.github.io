@@ -35,11 +35,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
 </head>
 <body>
-<script src="https://cdn.jsdelivr.net/npm/eruda@2.4.1/eruda.min.js"></script>
-<script>eruda.init();</script>
-
 <script>
-console.log("version: 2.1.14+123");
+console.log("version: 2.1.14+122");
 </script>
 
 <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
@@ -70,13 +67,13 @@ console.log("version: 2.1.14+123");
 <!-- This script installs service_worker.js to provide PWA functionality to
      application. For more information, see:
      https://developers.google.com/web/fundamentals/primers/service-workers -->
-<!--<script>-->
-<!--    if ('serviceWorker' in navigator) {-->
-<!--      window.addEventListener('flutter-first-frame', function () {-->
-<!--        navigator.serviceWorker.register('flutter_service_worker.js');-->
-<!--      });-->
-<!--    }-->
-<!--</script>-->
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=1865552858');
+      });
+    }
+</script>
 
 <script>
 vkBridge.subscribe((event) => {
